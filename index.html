@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="stylel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- weather container start -->
+    <div class="weather-container">
+      <!-- Header -->
+      <div class="header">
+        <div class="title">
+          <h2>Weather App</h2>
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <!-- switch -->
+        <div class="switch">
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <select name="location" id="location">
+              <option value="paris" selected>Paris</option>
+              <option value="london">London</option>
+              <option value="bangkok">Bangkok</option>
+              <option value="rangoon">Rangoon</option>
+              <option value="tokyo">Tokyo</option>
+            </select>
+          </div>
+          <div class="language">
+            <i class="fa-solid fa-earth-americas"></i>
+            <select name="language" id="language">
+              <option value="EN" selected>English</option>
+              <option value="JA">Japanese</option>
+              <option value="TH">Thai</option>
+              <option value="ZH_CN">Chinese Simplified</option>
+              <option value="FR">France</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- weather description -->
+      <div class="weather-description">
+        <div class="item city-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div value="city-name" class="city-name">Paris</div>
+        </div>
+        <div class="item">
+          <div class="weather">Sunny</div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-temperature-half"></i>
+          <div class="temperature">20&deg;C</div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-water"></i>
+          <div class="humidity">60%</div>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-wind"></i>
+          <div class="wind">5m/s</div>
+        </div>
+        <div class="item">
+          <i class="fa-regular fa-eye"></i>
+          <div class="visibility">10 km</div>
+        </div>
+      </div>
+    </div>
+    <!-- link -->
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

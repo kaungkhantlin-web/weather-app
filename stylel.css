@@ -1,0 +1,119 @@
+:root {
+  --bgcolor: rgb(0, 213, 255,0.9);
+  --border:  rgb(92, 9, 9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(185deg, rgb(63, 46, 46),rgb(62, 120, 118));
+}
+
+/* weather-container start */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, white, var(--bgcolor));
+  background-size: cover;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid rgb(92, 9, 9);
+  border-radius: 10px;
+}
+
+/*  header  */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  margin: 20px 0px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+}
+/*  switch  */
+.switch {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding: 5px;
+  border-bottom:1px solid var(--border) ;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.location,
+.language {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px var(--border);
+  padding: 2px ;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  width: 50%;
+  gap: 2px;
+  margin-bottom: 15px;
+}
+/* select */
+
+.location select,
+.language select {
+  border: none;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  font-weight: bold;
+  width: 100%;
+  background-color: var(--bgcolor);
+  padding: 8px 0px;
+}
+
+.location select:focus,
+.language select:focus {
+  outline: none;
+}
+
+.location:hover,
+.language:hover,
+.select:hover {
+  select {
+    background-color:rgb(255, 239, 239);
+  }
+
+  background-color: rgb(255, 239, 239);
+}
+/*  weather-description start */
+.weather-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.weather {
+  font-size: 25px;
+}
+.city-item {
+  font-size: 45px;
+}
+
+
