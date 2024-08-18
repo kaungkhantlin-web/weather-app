@@ -1,6 +1,6 @@
 :root {
   --bgcolor: rgb(0, 213, 255,0.9);
-  --border:  rgb(92, 9, 9);
+  --border:  rgb(80, 0, 0);
 }
 
 * {
@@ -10,7 +10,7 @@
 }
 body {
   height: 100vh;
-  background: linear-gradient(185deg, rgb(63, 46, 46),rgb(62, 120, 118));
+  background: linear-gradient(to bottom, rgb(63, 46, 46),rgb(62, 120, 118));
 }
 
 /* weather-container start */
@@ -20,11 +20,12 @@ body {
   align-items: center;
   background: linear-gradient(to top, white, var(--bgcolor));
   background-size: cover;
-  width: 50%;
+  width: 80%;
   margin: auto;
   margin-top: 100px;
   border: 1px solid rgb(92, 9, 9);
   border-radius: 10px;
+  color: var(--border);
 }
 
 /*  header  */
@@ -35,7 +36,7 @@ body {
   align-items: center;
   width: 100%;
   gap: 5px;
-  margin: 20px 0px;
+  margin: 40px 0px;
 }
 .title{
   display: flex;
@@ -47,8 +48,8 @@ body {
 .switch {
   display: flex;
   justify-content: center;
-  gap: 7px;
-  padding: 5px;
+  gap: 20px;
+  padding: 15px;
   border-bottom:1px solid var(--border) ;
   width: 80%;
   margin-top: 15px;
@@ -59,13 +60,15 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 0px 2px var(--border);
+  box-shadow: 0px 0px 5px var(--border);
   padding: 2px ;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   width: 50%;
   gap: 2px;
   margin-bottom: 15px;
+  background-color: var(--border);
+  color: white;
 }
 /* select */
 
@@ -76,8 +79,9 @@ body {
   transition: all 0.6s ease;
   font-weight: bold;
   width: 100%;
-  background-color: var(--bgcolor);
+  background-color: var(--border);
   padding: 8px 0px;
+  color: white;
 }
 
 .location select:focus,
@@ -90,9 +94,11 @@ body {
 .select:hover {
   select {
     background-color:rgb(255, 239, 239);
+    color: black;
   }
-
+  transform: scale(1.1);
   background-color: rgb(255, 239, 239);
+  color: black;
 }
 /*  weather-description start */
 .weather-description {
@@ -113,10 +119,10 @@ body {
   font-size: 25px;
 }
 .city-item {
-  font-size: 45px;
+  font-size: 50px;
 }
 /* media query */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .weather-container{
       width: 90%;
     }
