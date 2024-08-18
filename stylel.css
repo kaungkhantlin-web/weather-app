@@ -115,5 +115,10 @@ body {
 .city-item {
   font-size: 45px;
 }
-
+/* media query */
+@media screen and (max-width: 500px){
+    .weather-container{
+      width: 90%;
+    }
+}
 
